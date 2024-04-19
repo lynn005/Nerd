@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.logo img{
+    width: 200px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+header nav ul li{
+    margin: 0 8px;
+ }
+
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+header nav a:hover{
+    color: green;
+}
+.add-bg a{
+    background-color: rgb(38, 38, 38);
+    color: white;
+    padding: 10px;
+}
+.add-bg a:hover{
+    background-color: rgb(72, 72, 72);
+    color: white;
+    text-decoration: underline;
+}
+
+i{
+    font-size: 0.6rem;
+    margin: 0 5px;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner .image{
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.banner img{
+    width: 100%;
+    height: 450px;
+}
+
+.sec1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering using transform */
+    width: 60%; /* Adjust for desired width on larger screens */
+    height: auto; /* Auto height for content */
+    margin: 0; /* Remove margins for better centering */
+  }
+  
+.texts{
+    color: white;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.texts h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+} 
+.texts p{
+    font-size: 1.2rem;
+}
+.search{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin: 40px 0;
+}
+
+.searchbox{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    outline: none;
+    margin-right: 5px;
+    padding-left: 10px;
+    border-radius: 6px;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+
+}
+
+.searchbox:focus{
+    border: 0.5px solid rgba(0, 128, 0, 0.4);
+    box-shadow: 0 0 4px rgb(41, 130, 41);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.searchsubmit{
+    padding: 15px 10px;
+    cursor: pointer;
+    background-color: rgb(41, 130, 41);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.5rem;
+}
+
+.searchsubmit:hover{
+    background-color: rgb(5, 122, 52);
+}
+
+/* Main Content */
+
+main{
+    margin: 0 60px;
+}
+
+/* Sec1 */
+.places{
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.places h1{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 10px 0;
+}
+.flex-container1{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.four-boxs{
+    width: 23%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.four-boxs:hover{
+     border: 2px solid rgba(41, 130, 41, 0.6);
+}
+.four-boxs img{
+    width: 100%;
+    height: 200px;
+}
+.four-boxs h1{
+    font-size: 1em;
+}
+
+.four-boxs p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+div.button{
+    text-align: center;
+    padding: 25px 0;
+}
+div button{
+    font-size: 1.6rem;
+    background-color: rgb(41, 130, 41);
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid rgb(41, 130, 41);
+    border-radius: 10px;
+}
+
+.button button:hover{
+    background-color: rgb(5, 122, 52);
+}
+
+/* Sec2 */
+
+.sec2{
+    margin: 40px 0;
+}
+.div2 h1, .div2 p{
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.div1{
+    margin: 20px 0;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(200px auto)
+}
+
+.text2{
+    padding: 0 20px;
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image2{
+    height: 100%;
+}
+.image2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+@media(max-width: 1080px){
+    .banner img{
+        height: 340px;
+    }
+    .texts h1{
+        font-size: 2rem;
+    }
+    .texts p{
+        font-size: 1.1rem;
+    }
+    .searchbox{
+        font-size: 1.1rem;
+    }
+    .searchsubmit{
+        font-size: 1.1rem;
+    }
+    .div1{
+        height: 180px;
+    }
+    .four-boxs h1{
+        font-size: 0.9em;
+    }
+    
+}
+@media(max-width: 900px){
+    .flex-container1{
+        height: 240px;
+    }
+    .four-boxs img{
+        height: 120px;
+    }
+    .four-boxs h1{
+        font-size: 0.7rem;
+    }
+    .four-boxs p{
+        font-size: 0.6rem;
+    }
+    div button{
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+}
+
+@media(max-width: 710px){
+    .banner img{
+        height: 280px;
+    }
+    .texts h1{
+        font-size: 1.5rem;
+    }
+    .texts p{
+        font-size: 0.9rem;
+    }
+    .searchbox{
+        font-size: 0.9rem;
+    }
+    .searchsubmit{
+        font-size: 0.9rem;
+    }
+    .flex-container1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        height: auto;
+    }
+    .four-boxs{
+        width: 100%;
+    }
+
+    div button{
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .places h1{
+        font-size: 1.8rem;
+    }
+    .logo img{
+        width: 150px;
+    }
+    header a{
+        font-size: 0.5em;
+    }
+}
+
